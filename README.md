@@ -1,5 +1,4 @@
 # DLforCBIR
-<<<<<<< HEAD
 Deep Learning for content-based image retrieval with TensorFlow.
 
 ## Image preprocessing
@@ -39,6 +38,3 @@ Performe feature similarity computation for retrieval task. Cosine similarity is
 Example of using images stored on disk as tf inputs.
 
 **usage: python retrieval.py -h**
-=======
-Deep learning for content-based image retrieval with TensorFlow
->>>>>>> f2f8323989939c12f04ecfbaaada9c53fb90557a
