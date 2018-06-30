@@ -1,5 +1,5 @@
 # DLforCBIR
-Deep Learning for content-based image retrieval with TensorFlow.and Keras
+Deep Learning for content-based image retrieval with TensorFlow and Keras
 
 ## Image preprocessing
 
