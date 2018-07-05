@@ -49,6 +49,6 @@ Image preprocessing.
 
 Image retrieval function.
 
-**main.py:**
+**lenet5.py:**
 
-Main function.
+Implementation of Lenet-5 with keras.
