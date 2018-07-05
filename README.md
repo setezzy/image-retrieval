@@ -45,6 +45,10 @@ Example of using images stored on disk as tf inputs.
 
 Image preprocessing.
 
-**funcs.py**
+**funcs.py:**
 
 Image retrieval function.
+
+**main.py:**
+
+Main function.
