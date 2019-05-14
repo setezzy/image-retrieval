@@ -11,7 +11,6 @@ mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 
 # argument parsing
 parser = argparse.ArgumentParser(description='Main function for follow-up input generation and nc calculation')
-parser.add_argument('threshold', help="threshold for determining neuron activated", type=float, default=0)
 parser.add_argument('mr', choices=['rotate', 'erosion', 'dilation'])
 args = parser.parse_args()
 
