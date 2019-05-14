@@ -2,6 +2,7 @@ from __future__ import division
 import tensorflow as tf
 import numpy as np
 import pandas as pd
+import argparse
 import cv2
 from img_trans import *
 from tensorflow.examples.tutorials.mnist import input_data
