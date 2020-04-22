@@ -9,11 +9,6 @@ import numpy as np
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
 
-# argument parsing
-parser = argparse.ArgumentParser(description='Main function for follow-up input generation and nc calculation')
-parser.add_argument('mr', choices=['rotate', 'erosion', 'dilation'])
-args = parser.parse_args()
-
 # restore lenet model to conduct retrieval task
 sess = tf.InteractiveSession()
 # load meta graph
@@ -31,6 +26,7 @@ label = graph.get_tensor_by_name('Placeholder_1:0')
 keep_prob = graph.get_tensor_by_name('Placeholder_2:0')
 
 
+# load your own local pics
 def read_from_disk():
     """
     read file names and labels
@@ -45,7 +41,7 @@ def read_from_disk():
     classes = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
     for class_item in classes:
-        dir_name = './pics/'+args.mr+'/'+class_item
+        dir_name = './pics/'+class_item
         for files in os.listdir(dir_name):
             file_list.append(dir_name+'/'+files)
             label_list.append(classes.index(class_item))
