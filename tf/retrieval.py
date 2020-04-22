@@ -61,10 +61,10 @@ def retrieval():
         cv2.imwrite('./pics/source'+str(i)+'.jpg', b3[i])
 
         # =====================generate new image=============================
-        img = b3[i]
-        category = test_digit[i]
-        gen_image(i, img, args.trans, category)
-        print '%s finished' % str(trans)
+        #img = b3[i]
+        #category = test_digit[i]
+        #gen_image(i, img, args.trans, category)
+        #print '%s finished' % str(trans)
 
 
         # ===========================retrieval task=================================
@@ -102,7 +102,7 @@ def retrieval():
                 if pred_digit[k] == test_digit[i]:
                     retrieved_related += 1
 
-
+'''
 def gen_image(i, img, trans, category):
     """
     # generate follow-up image
@@ -117,7 +117,7 @@ def gen_image(i, img, trans, category):
     if not (os.path.exists(path_follow)):
         os.makedirs(path_follow)
     cv2.imwrite(path_follow + '/' + str(i) + '.jpg', img_new)
-
+'''
 
 if __name__ == '__main__':
     retrieval()
